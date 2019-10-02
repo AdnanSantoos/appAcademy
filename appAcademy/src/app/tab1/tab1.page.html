@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Fluxo
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="welcome-card">
+      <ion-card-header><ion-card-title>Gráfico</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <canvas baseChart [chartType]="'line'"
+        [datasets]="chartData" [labels]="chartLabels"
+        [options]="chartOptions" [legend]="true">
+      </canvas>
+      </ion-card-content>
+    </ion-card>
+</ion-content>
