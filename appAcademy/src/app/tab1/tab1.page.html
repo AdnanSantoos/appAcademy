@@ -5,16 +5,54 @@
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
-    <ion-card class="welcome-card">
-      <ion-card-header><ion-card-title>Gráfico</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <canvas baseChart [chartType]="'line'"
-        [datasets]="chartData" [labels]="chartLabels"
-        [options]="chartOptions" [legend]="true">
+    <ion-card>
+        <ion-card-header>
+          <ion-card-title>
+            Minha Academia
+          </ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <div class="contador">
+                    <h2>aproximadamente</h2>
+                    <h1>18</h1>
+                    <h2>pessoas malhando</h2>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
+  <ion-card class="card-clima">
+    <ion-card-header>
+      <ion-card-title>Clima de Hoje</ion-card-title>
+      <ion-card-subtitle>
+        Salvador,Ba <br>
+        {{dataAtual}}
+      </ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col class="graus">30º</ion-col>
+          <ion-col>
+              <ion-icon class="icon" name="sunny"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-title>Gráfico</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <canvas baseChart [chartType]="'line'" [datasets]="chartData" [labels]="chartLabels" [options]="chartOptions"
+        [legend]="true">
       </canvas>
-      </ion-card-content>
-    </ion-card>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

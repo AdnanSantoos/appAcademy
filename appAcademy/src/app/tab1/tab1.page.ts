@@ -1,11 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
   styleUrls: ['tab1.page.scss']
 })
-export class Tab1Page {
+
+
+export class Tab1Page  implements OnInit {
   chartOptions = {
     responsive: true
   };
@@ -15,7 +18,14 @@ export class Tab1Page {
     { data: [45, 67, 800, 500], label: 'Esteira' }
   ];
   chartLabels = ['11:30', '15:30', '18:00', '22:00'];
+  data = new Date();
+  dataAtual: any;
+  constructor( public datepipe: DatePipe) {
+    this.dataAtual = this.datepipe.transform(this.data,'dd-MM-yyy');
+  }
   
-  constructor() {}
+  ngOnInit(){
+   
+  }
 
 }

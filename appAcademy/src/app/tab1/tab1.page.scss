@@ -2,3 +2,29 @@
   max-height: 35vh;
   overflow: hidden;
 }
+
+.contador{
+  text-align: center;
+  h1{
+    font-size: 56px;
+  }
+}
+.card-clima{
+  background: url(../../assets/images/verao.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  ion-card-title, ion-card-title{
+    color:#000;
+  }
+  .icon{
+    font-size: 135px;
+    color: #dfa10b;
+    margin-top: -60px;
+  }
+  .graus{
+    font-size: 65px;
+    text-align: right;
+    padding-right: 20px;
+    color:#000;
+  }
+}
