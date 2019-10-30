@@ -4,6 +4,10 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
+     path: 'login',
+      loadChildren: './tela-login/tela-login.module#TelaLoginPageModule'
+  },
+  {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   }
@@ -12,7 +16,7 @@ const routes: Routes = [
   imports: [
     RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
   ],
-  providers:[DatePipe],
+  providers: [DatePipe],
   exports: [RouterModule]
 })
 export class AppRoutingModule {}

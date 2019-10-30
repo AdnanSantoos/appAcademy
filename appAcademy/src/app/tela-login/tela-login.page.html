@@ -1,0 +1,19 @@
+<ion-content>
+      <img
+        id="img-login"
+        src="../../assets/images/Sem Título-1.svg"
+      />
+  <ion-item id="dados-login" lines="inset">
+    <ion-label position="floating">Email</ion-label>
+    <ion-input [(ngModel)]="usuario.nome" type="email" placeholder="exemplo@exemplo.com"></ion-input>
+  </ion-item>
+
+  <ion-item id="dados-login" lines="inset">
+    <ion-label position="floating">Senha</ion-label>
+    <ion-input [(ngModel)]="usuario.senha" type="password" placeholder="**********"></ion-input>
+  </ion-item>
+
+  <div class="ion-padding">
+    <ion-button shape="round" expand="full" (click)="fazerLogin()">Increva-se</ion-button>
+  </div>
+</ion-content>

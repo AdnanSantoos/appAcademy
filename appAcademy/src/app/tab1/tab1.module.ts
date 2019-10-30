@@ -11,7 +11,7 @@ import { ChartsModule } from 'ng2-charts';
     IonicModule,
     CommonModule,
     FormsModule,
-    ChartsModule, 
+    ChartsModule,
     RouterModule.forChild([{ path: '', component: Tab1Page }])
   ],
   declarations: [Tab1Page]

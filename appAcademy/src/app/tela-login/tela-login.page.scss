@@ -1,0 +1,23 @@
+ion-content {
+    --background: url('../../assets/images/bg-login.jpg') no-repeat center center / cover !important;
+}
+
+#img-login{
+    
+}
+
+#dados-login{
+    --background: none;
+    --padding-start: 50px;
+    --padding-end: 50px;
+    --placeholder-font-weight: bold;
+}
+
+ion-button{
+    --padding-start: 50px;
+    --padding-end: 50px;
+}
+
+.ion-padding{
+    --ion-padding: 50px;
+}
