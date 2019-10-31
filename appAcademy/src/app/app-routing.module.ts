@@ -4,6 +4,10 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
+    path: 'tela-inicial',
+    loadChildren: './tela-inicial/tela-inicial.module#TelaInicialPageModule'
+  },
+  {
      path: 'login',
       loadChildren: './tela-login/tela-login.module#TelaLoginPageModule'
   },
