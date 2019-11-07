@@ -13,9 +13,9 @@ export class Tab1Page  implements OnInit {
     responsive: true
   };
   chartData = [
-    { data: [330, 600, 260, 700], label: 'Biceps / Peito' },
-    { data: [120, 455, 100, 340], label: 'Perna' },
-    { data: [45, 67, 800, 500], label: 'Esteira' }
+    { data: [40, 35, 70, 50], label: 'Biceps / Peito' },
+    { data: [40, 45, 60, 50], label: 'Perna' },
+    { data: [40, 35, 45, 55], label: 'Esteira' }
   ];
   chartLabels = ['11:30', '15:30', '18:00', '22:00'];
   data = new Date();

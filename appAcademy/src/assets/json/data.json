@@ -1,0 +1,32 @@
+{
+    "properties" : [
+    {
+        "nome": "Self it",
+        "logo" : "self-it.png",
+        "valor" : "R$ 59,90",
+        "long": -12.989033,
+        "lat": -38.455690
+    },
+    {
+        "nome": "Smart Fit",
+        "logo": "smart-fit.png",
+        "valor" : "R$ 79,90",
+        "long": -12.906934,
+        "lat": -38.351282
+    },
+    {
+        "nome": "Well Academia",
+        "logo": "well.jpg",
+        "valor" : "R$ 89,90",
+        "long": -12.989226,
+        "lat": -38.488758
+    },
+    {
+        "nome": "BodyTech",
+        "valor" : "R$ 129,90",
+        "logo": "bodytech.png",
+        "long": -12.980768,
+        "lat": -38.464941
+    }
+    ]
+ }
